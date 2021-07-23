@@ -22,7 +22,17 @@
         <java.version>11</java.version>
         <start-class>guru.springframework.sfgpetclinic.SfgPetClinicApplication</start-class>
     </properties>
-    <dependencies>
+    <scm>
+        <developerConnection>scm:git:git@github.com:VladykaIhor/sfg-pet-clinic.git</developerConnection>
+    </scm>
 
-    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
